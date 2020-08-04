@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>A Todo app</title>
+</head>
+<body >
+    <div class="container" id="container">
+        <div class="text-center">
+         <h4 class="text-center">Your Todo App</h4>
+         <button class="text-center" id="mode" onclick="darkMode()">Dark mode</button>
+        </div>
+        <div class="input-group mb-3 " id="searchBar">
+            
+            <!-- <button class="btn btn-outline-secondary" type="button" onclick="removeTask()">Task Done</button>
+            <button class="btn btn-outline-secondary" type="button" id="submit" onclick="addTask()">Add task</button> -->
+            <input type="text" class="form-control " placeholder="Write here" aria-label="Write here" aria-describedby="basic-addon2" id="input">
+            <div class="input-group-append">
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-outline-secondary" type="button" id="submit" onclick="addTask()">Add task</button>
+          <button class="btn btn-outline-secondary " type="button" onclick="removeTask()">Remove</button>
+            <h5 id="ytask">Your tasks</h5>
+            <h6 id="date"></h6>
+
+        </div>
+<!-- Added Task-->
+        <div id="todo" >
+            <ul id="addedTaskList" class="text-center"></ul>
+        </div>
+
+
+<!--Completed task-->
+        <p class="text-center">
+            <a class="btn btn-outline-secondary" data-toggle="collapse" href="#multiCollapseExample1"
+             role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >completed task [hide/view]</a>
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse show multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body" id="completeDark">
+                    <ol id="completedTask" class="text-center"></ol>
+                </div>
+                <div class="text-center">
+                  <button class="btn btn-outline-secondary " type="button" id="clear" onclick="clearAll()">Clear all</button>
+                </div>
+                </div>
+            </div> 
+    </div>
+    </div>
+
+<script src="script.js"></script>  
+</body>
+</html>

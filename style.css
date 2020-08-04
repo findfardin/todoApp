@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+    
+}
+#container{
+
+    border: black 1px solid;
+    padding-top: 5px;
+
+}
+.float-left{
+    margin-right: 20px;
+    margin-top: 7px;
+    
+}
+#ytask{
+    padding-top: 8px;
+    font-size: 30px;
+    text-decoration: underline;
+    
+}
+.btn{
+    width: 30%;
+    box-shadow: none!important;
+
+}
+#addedTaskList{
+    font-size: 17px;
+}
+#completeDark{
+    font-size: 17px;
+
+}
+#input{
+border: 1px #6C757D solid;
+text-align: center;
+color:#070707;  
+}
+.form-control {
+    box-shadow: none!important;
+}
+.task{
+border: 1px solid #6C757D;
+margin-bottom: 4px;
+}
+.task:hover{
+    background-color:#6C757D ;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.completedCross{
+    text-decoration:line-through;
+    
+}
+#mode{
+    border: 1px #000 solid;
+    width: 80px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
